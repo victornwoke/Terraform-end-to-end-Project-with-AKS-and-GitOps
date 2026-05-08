@@ -1,0 +1,35 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Target namespace for all resources
+namespace: 3tirewebapp-dev
+
+# Resources to include
+resources:
+  - namespace.yaml
+  - postgres-complete.yaml
+  - backend-complete.yaml
+  - frontend-complete.yaml
+  - external-secrets-placeholder.yaml
+
+# Common annotations applied to all resources
+commonAnnotations:
+  app.kubernetes.io/version: "1.0"
+
+# Centralized image management
+images:
+  - name: victornwoke/frontend
+    newTag: v2
+  - name: victornwoke/backend
+    newTag: latest
+  - name: postgres
+    newTag: "15"
+
+# Resource configurations - replica scaling only
+replicas:
+  - name: frontend
+    count: 2
+  - name: backend
+    count: 2
+  - name: postgres
+    count: 1

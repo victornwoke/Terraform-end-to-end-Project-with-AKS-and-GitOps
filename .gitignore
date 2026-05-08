@@ -1,0 +1,36 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+
+# Backend configuration files (contains sensitive storage account info)
+backend.tf
+*/backend.tf
+
+# Backup files
+*.backup
+
+# Binaries
+bin/
+*/bin/
+kubelogin*
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Sensitive files
+secrets/
+*.pem
+*.key
+!*.tf

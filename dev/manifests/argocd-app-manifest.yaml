@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 3tirewebapp-${ENVIRONMENT}
+  namespace: ${ARGOCD_NAMESPACE}
+spec:
+  project: default
+  source:
+    repoURL: ${APP_REPO_URL}
+    targetRevision: HEAD
+    path: ${APP_REPO_PATH}
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: 3tirewebapp-${ENVIRONMENT}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
