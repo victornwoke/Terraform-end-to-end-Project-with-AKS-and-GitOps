@@ -6,20 +6,6 @@
 
 Complete production-ready infrastructure as code for deploying Azure Kubernetes Service (AKS) with GitOps using Terraform and ArgoCD.
 
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Architecture](#-architecture)
-- [Prerequisites](#-prerequisites)
-- [Quick Start](#-quick-start)
-- [Detailed Setup](#-detailed-setup)
-- [Multi-Environment Deployment](#-multi-environment-deployment)
-- [Usage](#-usage)
-- [Verification](#-verification)
-- [Troubleshooting](#-troubleshooting)
-- [Clean Up](#-clean-up)
-- [Contributing](#-contributing)
-
 ## Overview
 
 This project provides a complete infrastructure-as-code solution for deploying a production-ready Kubernetes platform on Azure using:
