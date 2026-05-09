@@ -18,9 +18,9 @@ commonAnnotations:
 
 # Centralized image management
 images:
-  - name: victornwoke/frontend
+  - name: itsbaivab/frontend
     newTag: v2
-  - name: victornwoke/backend
+  - name: itsbaivab/backend
     newTag: latest
   - name: postgres
     newTag: "15"

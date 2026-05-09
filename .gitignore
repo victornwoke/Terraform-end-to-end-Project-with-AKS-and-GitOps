@@ -34,3 +34,6 @@ secrets/
 *.pem
 *.key
 !*.tf
+
+
+kube_config.yaml

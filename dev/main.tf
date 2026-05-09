@@ -47,6 +47,8 @@ resource "azurerm_kubernetes_cluster" "main" {
   # Use explicit node resource group name (this prevents circular dependencies)
   node_resource_group = local.infra_nodes_rg_name
   kubernetes_version  = var.kubernetes_version
+  sku_tier            = "Premium"
+  support_plan        = "AKSLongTermSupport"
 
   # Add timeouts for long operations
   timeouts {
