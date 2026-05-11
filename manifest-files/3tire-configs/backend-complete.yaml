@@ -28,7 +28,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: backend
-          image: sirhumble07/backend # Tag managed by kustomization.yaml
+          image: sirhumble07/backend:latest # Tag managed by kustomization.yaml
           ports:
             - containerPort: 8080
           env:
