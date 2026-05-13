@@ -18,6 +18,8 @@ This project provides a complete infrastructure-as-code solution for deploying a
 
 ## Architecture
 
+![Architecture](./AKS-GitOps-Architecture.png)
+
 ### Infrastructure Components
 
 - **AKS Cluster**: Managed Kubernetes with Azure AD integration
