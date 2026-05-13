@@ -18,7 +18,7 @@ This project provides a complete infrastructure-as-code solution for deploying a
 
 ## Architecture
 
-![Architecture](AKS-GitOps-Architecture.png)
+![Architecture](./azure_vmss_architecture.png)
 
 ### Infrastructure Components
 
